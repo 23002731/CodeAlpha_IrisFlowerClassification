@@ -5,6 +5,7 @@ Author: Rinae Mathaulula
 Classifies Iris flowers (setosa, versicolor, virginica) from four measurements
 (sepal length/width, petal length/width) and compares several classifiers.
 """
+import os
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -23,6 +24,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, ConfusionMatrixDisplay
 
 RANDOM_STATE = 42
+os.makedirs("images", exist_ok=True)
 sns.set_theme(style="whitegrid")
 
 # 1. Load data -------------------------------------------------------------

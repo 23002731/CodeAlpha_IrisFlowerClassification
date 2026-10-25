@@ -30,16 +30,16 @@ The SVM classified 29 of 30 test flowers correctly. Setosa is perfectly separabl
 
 **Key insight:** petal length and petal width carry most of the predictive power (≈87% of Random Forest importance combined); sepal width contributes almost nothing.
 
-![Pairplot](images/pairplot.png)
-![Confusion matrix](images/confusion_matrix.png)
-![Feature importance](images/feature_importance.png)
+![Pairplot](pairplot.png)
+![Confusion matrix](confusion_matrix.png)
+![Feature importance](feature_importance.png)
 
 ## How to run
 ```bash
 pip install -r requirements.txt
 python iris_classification.py
 ```
-Plots are saved to `images/` and the model comparison to `model_comparison.csv`.
+Plots are saved to an `images/` folder and the model comparison to `model_comparison.csv`.
 
 ## Tools
 Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
